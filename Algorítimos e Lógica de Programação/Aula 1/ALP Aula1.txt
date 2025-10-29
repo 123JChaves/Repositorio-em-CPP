@@ -1,0 +1,164 @@
+Variável ou Constante: 
+
+Possuem três elementos básicos: 
+
+1º) Valores: O que está dentro da "caixinha" (Slot), ou seja, qual o valor (variável ou constante) que se encontra ali.
+
+2º) Identificador: O nome que é dado a essa "caixinha" (Slot).
+
+3º) O endereço de memória, ou o local físico onde se encontra essa "caixinha" (Slot).
+
+------
+
+Programa C++
+
+1º: Valores: =======
+
+2º: Identificador do valor (variável ou constante):
+
+São os nomes das variáveis, constantes, programas, das rotinas etc. 
+
+*As regras básicas para a formação dos identificadores são: 
+
+	1) Usar caracteres: Os caracteres que podem ser utilizados para a formação dos identificadores: números, letras, maiúsculas e minúsculas e o caractere sublinhado.  	
+
+	2) O primeiro caractere deve ser sempre uma letra ou um caractere sublinhado (o que exclui números).
+
+	3) Não são permitidos espaços em brancos e caracteres especiais.
+
+	4) Não podemos usar palavras reservadas (ex: if, else, include, main) nos identificadores, ou seja, qualquer palavra reservada à linguagem de programação que serve para a execução de determinada tarefa já especificada. 
+
+*Nomes válidos: 
+
+	A	x5	Valor1	a
+	
+	nota	A32	Nota_1	dia
+
+	Nota
+
+*Nomes Inválidos
+
+	5b	e 12	if	else
+
+	x-y	prova 2	nota(2)
+
+Raciocínio lógico: 
+
+Três partes para o desenvolvimento de algorítimos: 
+
+1) Primeira parte: Conceito; Segunda parte: Definições; Terceira Parte: Estrutura. 
+
+1.a) Conceito: 
+
+	Primeira Definição: O algoritmo é uma sequência de passos que visa atingir um objetivo bem definido (Forbelone, 1999).
+
+	Segunda Definição: Algoritmo é uma definição de uma sequência de passos que deve ser seguido (sic) para a realização de uma tarefa (Ascencio, 1999). 
+
+	Terceira Definição: Algoritmo é uma sequência finita de instruções ou operações, cuja execução, em tempo finito, resolve um problema computacional qualquer que seja sua instância (Salvetti, 1999). 
+
+1.a.a) Métodos para a construção de um algoritmo (Definição): 
+
+	1. Ler atentamente o enunciado destacando os pontos mais importantes: Fazer uma entrevista com o usuário final para saber quais são os objetivos que ele deseja alcançar através do programa requisitado. Saber os objetivos é fundamental, levando em consideração que o algoritmo é um sequenciamento de passos que visa a aquisição de um determinado fim. 
+
+	2. Definir os dados de entrada: Quais são os elementos que entram dentro do programa, ou aquilo que é processado. 
+
+	3. Definir o processamento, ou seja, quais cálculos serão efetuados e quais restrições para esses cálculos: 
+
+	4. Definir os dados de saída: Aquilo que resulta do que é processado pelo programa. 
+
+	5. Construir o algoritmo: Ou seja, definir a sequência de passos que visam a aquisição de um determinado fim desejado pelo usuário do programa. 
+
+	6. Testar o algoritmo: Que seria ver se o fim é atingido por esse sequenciamento de passos.  
+
+1.b.1) Descrição narrativa: 
+
+	Consiste em analisar o enunciado do problema e escrever, em linguagem natural (português), os passos a serem seguidos para a solução do problema. 
+	
+	Vantagens: Não é necessário aprender nenhum novo conceito, pois a língua natural, nesse ponto, já é bem conhecida. 
+	Desvantagens: A linguagem natural abre espaço a várias interpretações, que podem dificultar a passagem natural do algoritmo para o programa.
+
+1.b.2) Descrição em Fluxograma: 
+
+	Consiste em analisar o enunciado do problema e escrever, utilizando símbolos gráficos pré-definidos, os passos a serem seguidos para a resolução do problema. 
+	
+	Vantagens: Permite uma visualização intuitiva, para quem conhece os símbolo predefinidos, dos passos a serem seguidos para a execução da tarefa a ser realizada pelo algoritmo. 
+	Desvantagens: É necessário aprender a simbologia dos fluxogramas e, além disso, o algoritmo resultante não apresenta muitos detalhes, podendo estabelece um hiato entre o algoritmo resultante e a transição para a programa desejado, ou a transcrição do que está sendo apresentado no fluxograma, para o código-fonte.
+
+1.c) Pseudocódigo. 
+
+	Consiste em analisar o enunciado do problema e escrever, em regras bem definidas, os passos a srem seguidos para a resolução de um problema. 
+
+	Vantagens: A passagem do algoritmo para o programa é quase imediata;
+	Desvantagem: É necessário aprender as regras do pseudocódigo. 
+
+	Ex1: Faça um algoritmo para representar a multiplicação de dois números. 
+
+	Variação: N1, N2, M: numérico. 
+
+	Início:
+	escreva ("Digite o primeiro número) leia (N1)
+	escreva ("Digite o segundo número) leia (N2)
+	M <- N1*N2
+	escreva ("O resultado da multiplicação é =") leia (M)
+	Fim algoritmo.   
+
+O Visualg3 é o melhor interpretador de algoritmos (programa sugerido). 
+
+	Ex2: Faça um algoritmo para calcular a área de um triângulo retângulo
+
+	Algoritmo "Triângulo_Retângulo"
+
+	Variação: b, h, A: numérico. 
+	
+	Início: 
+	escreva ("Digite o valor base") leia (b)
+	escreva ("Digite o valor da altura") leia (h)
+	A <- (b*h)/2
+	escreva ("A área do triângulo retângulo é =")
+
+	Fim Agorítimo
+
+	Exercícios: Faça um algoritmo que calcule a média aritmética que calcule entre duas notas de um aluno e mostre ua situação, que pode ser aprovado ou reprovado (aprovado >=7).
+
+	Fazer uma "descrição narrativa", um "fluxograma" ou um "pseudocódigo". 
+
+	Descritiva narrativa: 
+	Passo 1: Receber as duas notas do aluno; 
+	Passo 2: Calcular a média aritmética; 
+	Passo 3: Mostrar a média; 
+	Passo 4: Se a medida for maior ou igual a 7, então mostre aprovado, senão mostre reprovado. 
+
+	Descrição por fluxograma: 
+
+	Descrição por pseudocódigo:
+
+	Exemplo de um algoritmo para calcular a média de um aluno com base em duas notas.  
+
+	Algoritmo: "Média"
+	
+	Variação: N1, N2, M
+	escreva ("Digite a primeira nota) leia (N1)
+	escreva ("Digite a segunda nota) leia (N2)
+	M <- (N1+N2)/2
+	escreva ("Média=") leia (M)
+	se M >=7 então
+	escreva ("Aprovado")
+	senao
+	escreva ("Reprovado")
+	fimse
+	fimalgoritmo
+
+	Exercício: Calculo da hipotenusa
+
+	Algoritmo: "Calculo da Hipotenusa"
+
+	Variação: a, b, H: numérico
+	inicio
+	escreva ("Digite o valor do primeiro cateto seno") leia (a)
+	escreva ("Digite o valor do segundo cateto coseno") leia (b)
+	√(a2+b2)=H
+	escreva: ("A hipotenusa é=") leia (H).
+	fimalgoritmo
+
+	Desenvolver um algorítimo é estabelecer uma estratégia para a resolução de um determinado problema. 
+ 

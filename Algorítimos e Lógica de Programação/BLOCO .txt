@@ -1,0 +1,37 @@
+BLOCO: 
+
+Um bloco pode ser definido como um conjunto de ações com uma função definida. 
+Neste caso um algoritmo pode ser visto como um bloco. Ele serve também para
+definir os limites nos quais as variáveis declaradas em seu interior são conhecidas. 
+
+Cada linguagem possui seu próprio delimitador
+
+Exemplo1: 
+
+Início: /*Inicio do Bloco (Algoritmo)
+		Declaração de Variáveis
+		Sequência de Ações
+Fim. Fim do Bloco (Algoritmo)*/ (/* xxxx */) = Delimitadores de comentários. Assim, 
+o compilador não entenderá que aquilo que se encontra esses símbolos deva ser lido. 
+
+Exemplo2:  
+
+if (nota >=7)
+{
+	notas[O] =nota;
+	printf("A nota do primeiro Bimestre é=%i",nota);
+}
+
+Exemplo3: Linguagem 'Pascal'
+
+if (nota >=7) then
+being
+	notas[1]:=nota
+	writeln('A nota do primeiro Bimestre é:',nota);
+end
+
+Exemplo4: Linguagem Python
+
+if (nota >=7):
+ notas = np.array([nota,O,O,O])
+ print('A nota do Bimestre é:'nota)

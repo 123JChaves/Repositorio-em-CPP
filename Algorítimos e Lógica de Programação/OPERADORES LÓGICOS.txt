@@ -1,0 +1,177 @@
+Operadores Lógicos: 
+
+Três são os principais tipos de operadores: 
+
+!  = Operador de Negação
+&& = Operador de Conjunção
+|| = Operador de Disjunção
+
+
+EXPRESSÕES LÓGICAS
+
+Denominamos expressões lógicas aquelas cujos operadores são lógicos ou operacionais
+e cujos operandos são relações, variáveis ou constantes de tipo lógico. O resultado 
+obtido dessas operações será sempre lógico. 
+
+Expressões aritméticas, relacionais e lógicas
+
+ Lógica são composições de operandos e operadores lógicos. Exemplo?
+ ! %% ||
+
+E   OU   Negação            Linguagem
+And Or    Not                  C++
+
+
+OPERADORES RELACIONAIS
+
+Utilizamos operadores relacionais para realizar comparações entre dois valores de mesmo tipo primitivo.
+Tais valores são representados por constantes, variáveis, ou expressões aritméticas. 
+O resultado obtido dessas operações será sempre lógico. Segue a tabela com os símbolos: 
+
+Operador	Função		Exemplos
+
+  = =		igual a		3 = = 3
+   >	       maior que	 x > y
+   <	       menor que	 x < y
+  > =	    maior ou igual a	5 > = 3
+  > =       menor ou igual a    5 > = 3
+  < >         diferente de	4 < > 6
+
+
+CONCEITOS
+
+Expressões Aritméticas
+
+Exemplos - C++
+
+if((x > 5) and (x < 10))
+	printf("Numero entre 5 e 10); 
+
+if ((x == 5 and y == 2) or (y == 3))
+	printf("x igual a 5 e y igual a 2, ou y igual a e");
+
+if ((x == 5) and (y == 2, or y == 3))
+	printf("x igual a 5 e y igual a 2 ou y igual a 3");
+
+
+Exercícios: 
+
+Supondo que A, B, C são variáveis do tipo inteiro, com valores iguais a, 5, 10 e -8 
+respectivamente, e uma variável D, com valor 1,5, quais os resultados das expressões
+aritméticas a seguir?
+
+a) X = (2 * A mod 3 - C)
+ 
+	5 mod 3 == 2 
+	2*2 == 4
+	4 - (-8) == 12
+	R: 12
+
+b) X = (rad(-2  * C) div4) = 1
+
+	-2 * -8 == 16, 
+	√16 == 4
+	4/4 == 1
+	R: 1
+
+c) X = (((20 div 3) div 3) + pot(8,2) /2)
+	20 div 3 == 6
+	6 div 3 == 2
+	pow 8,2 == 64
+	64/2 == 32
+	32+2 ==
+	R: 34
+
+d) X = ((30 mod 4 * (3,3)) * -1)
+	3,3 == 27
+	30 mod 4 == 2
+	27 * 2 == 54 
+	R: 54
+
+e) X = (pot (-C, 2) + (D * 10) / A)
+	pow(-(-8),2) == 64
+	D * 10 == 15
+	15/5 == 3
+	3 + 64 == 67
+	R: 67
+	
+f) X = (rad (pot (A, B / A)) + C * D)
+	
+	10 / 5 == 2
+	5,2 == 25
+	√25 == 5
+	- 8 * 1,5 == -12
+	5 - 12 == -7
+	R: -7
+
+EXPRESSÕES:
+
+A) Expressões Aritméticas: 
+
+São aquelas expressões cujos operadores são constantes ou variáveis do tipo numérico. 
+
+Ex: 2, 4, 5, 10, 90 etc. são expressões constantes, pois seu valor não se altera ao longo do tempo. 
+
+Já x, y, z, a, b, D, A etc. são expressões variáveis, pois seu valor de memória pode ser alterado
+ao longo do tempo, ex: (10 * 5) = x, ou x * 4 = 8. 
+
+
+Comandos de Atribuição: 
+
+São comandos de atribuição aqueles que nos permitem oferecer um valor a uma variável, em que 
+o tipo do dado deve ser compatível com o tipo da variável, isto é, somente podemos atribuir
+um valor lógico a uma variável capaz de comportá-lo, ou seja, uma variável declarada como
+sendo do tipo lógico. 
+
+Exemplo: 
+
+lógico: A, B; 
+Inteiro X; 
+A <---- B; /* uma expressão que cabe, já que B pode pertencer logicamente ou ser atribuído a A */
+
+X <---- 8 + 13 div 5; /* uma expressão aritmética que, como declarado acima, pertence a X, pois
+o resultado (10) se trata de um número inteiro */
+
+B <---- 5 = 2 /* valor booleano, portanto lógico - que aqui, neste caso, se trata de um valor falso */
+
+X <---- 2; /* cabe à declaração de X, já que X foi declarado como uma variável que deve receber um 
+número inteiro */
+
+Analisando os seguintes comandos de atribuição.
+
+lógico: A;
+real: B, C; 
+inteiro: D; 
+
+A <---- B = C; /* (B = C) trata-se de uma expressão lógica. Se se declara que à variável A cabe um valor lógico, 
+e se B = C é um valor lógico, então B = C é atribuível a A.  
+D <---- B; Nem todo número real é um número inteiro, logo B não é necessariamente atribuível a D. 
+C * 1 <---- B + C = Aqui ocorrerá, para a linguagem C++ um erro de compilação, pois há uma operação declarada no 
+valor à esquerda, o que não é executável.
+C e B <---- 3,5 = Da mesma forma, aqui há uma operação do lado esquerdo onde deveria estar um comando de atribuição.
+Logo não será executável.
+
+y = (3+(4/2) /2 + pot((3+4),2) -3*5.2)
+
+	pot((3+4),2) = 49
+	3+(4/2) /2 = 2,5 
+	-3 * 5,2 = -15,6
+	-15,6 + 2,5 = -13,1
+	- 13,1 + 49 = 35,9
+	y = 35,9
+
+varA <---- 50
+varF <---- 1.0
+varS <---- "Maria"
+varB <---- varA DIV 7
+varA <---- 2 + pot(varB,2) + 10 mod 3*2
+varH <---- varF + varH/2
+varL <---- VERDADEIRO
+varL <---- varH >= varF
+
+varA = 
+varB = 7
+varF = 1.6
+varH = 1.2
+varS = "Maria"
+varL =
